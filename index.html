@@ -71,7 +71,13 @@
   font-size: 14px;
   color: black;
 }
-
+#certificate .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#certificate .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+}
 </style>
 
 
@@ -100,11 +106,13 @@
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
                 <a href="#skill" class="nav-item nav-link">Skills</a>
+
             </div>
             <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
                 <h1 class="text-primary fw-bold m-0">Tanisha Kushwah</h1>
             </a>
             <div class="navbar-nav me-auto py-0">
+                <a href="#certificate" class="nav-item nav-link">Certificate</a>
                 <a href="#project" class="nav-item nav-link">Projects</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
@@ -265,11 +273,54 @@
 
 
     
+    
 
 
     <!-- Projects Start -->
+    
 <div class="container-xxl py-6 pt-5" id="project">
-  <div class="container">
+  
+<!-- ✅ Certificates Section -->
+  <section id="certificate" class="py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">My Certificates</h2>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Certificate 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-lg border-0 h-100">
+          <img src="img/Networking.jpeg" 
+               class="card-img-top rounded-top" alt="Cisco Networking Basics">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Cisco Networking Basics - 2025</h5>
+            <a href="https://drive.google.com/file/d/1xIy0OEBUNKAAM5UTC3GUdpaDQzEBSw73/view" 
+               target="_blank" class="btn btn-primary btn-sm mt-2">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-lg border-0 h-100">
+          <img src="img/Devops Workshop.jpeg" 
+               class="card-img-top rounded-top" alt="Devops Workshop">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">DevOps Workshop - 2025</h5>
+            <a href="https://drive.google.com/file/d/1EPnzMbscUGnjvMlCP_vQx624t7mvms6Z/view" 
+               target="_blank" class="btn btn-primary btn-sm mt-2">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+    <div class="container">
     <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
       <div class="col-lg-6">
         <h1 class="display-5 mb-0">My Projects</h1>
